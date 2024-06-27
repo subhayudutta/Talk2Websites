@@ -4,7 +4,7 @@ Talk2Websites is a sophisticated AI-powered chatbot designed to provide comprehe
 
 ![Talk2Websites Screenshot](./talk2Websites_screenshot.png)
 
-Visit the live app: [Talk2Websites](https://talk2csv.onrender.com/)
+Visit the live app: [Talk2Websites](https://talk2websites-lfjzq4aifwsj5aujvcycog.streamlit.app/)
 
 ## Features
 

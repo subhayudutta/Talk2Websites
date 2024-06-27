@@ -8,12 +8,16 @@ from langchain.prompts import PromptTemplate
 from langchain_community.document_loaders import WebBaseLoader
 from bs4 import BeautifulSoup
 from langchain.text_splitter import RecursiveCharacterTextSplitter 
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
-api_key = os.getenv('GOOGLE_API_KEY')
-os.environ['GOOGLE_API_KEY'] = api_key
-genai.configure(api_key=api_key)
+# load_dotenv()
+# api_key = os.getenv('GOOGLE_API_KEY')
+# os.environ['GOOGLE_API_KEY'] = api_key
+# genai.configure(api_key=api_key)
+
+api_key1 = st.secrets["google_api_key"]
+os.environ['GOOGLE_API_KEY'] = api_key1
+genai.configure(api_key=api_key1)
 
 def get_webpage_text(url):
     loader = WebBaseLoader(url)
